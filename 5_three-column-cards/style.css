@@ -1,0 +1,129 @@
+@import url("./css/reset.css"); 
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  --fnt-main: "Lexend Deca", sans-serif;
+  --fnt-side: "Big Shoulders Display", sans-serif;
+
+  font-family: var(--fnt-main);
+  font-size: 93.75%;
+}
+
+.viewport-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* BUTTONS */
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+
+  background-color: var(--very-light-gray);
+  color: currentColor;
+  padding: .8em 2.1em;
+  border-radius: 100vw;
+  
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: transparent;
+  color: var(--very-light-gray);
+  outline: 2px solid var(--very-light-gray);
+  outline-offset: -2px;
+
+  transition: background-color 250ms linear, outline-offset 150ms linear;
+}
+
+
+
+
+/* Card */
+
+.three-column-cards {
+  border-radius: .5rem;
+}
+
+.preview-card:nth-child(1) {
+  color: var(--bright-orange);
+  --card-icon: url("./images/icon-sedans.svg");
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.preview-card:nth-child(2) {
+  color: var(--dark-cyan);
+  --card-icon: url("./images/icon-suvs.svg");
+}
+
+.preview-card:nth-child(3) {
+  color: var(--very-dark-cyan);
+  --card-icon: url("./images/icon-luxury.svg");
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.preview-card {
+  color: var(--bright-orange);
+  background-color: currentColor;
+  padding: 3.3rem;
+}
+
+.preview-card::before {
+  display: inline-block;
+  position: relative;
+  content: var(--card-icon);
+  width: 4.5rem;
+  aspect-ratio: 1 / 1;
+}
+
+.preview-card > h2 {
+  color: var(--very-light-gray);
+  font-size: 2.625rem;
+  font-family: var(--fnt-side);
+  text-transform: uppercase;
+}
+
+.preview-card > p {
+  color: var(--transparent-white);
+  margin-block: 1.5em;
+  max-width: 25ch;
+  line-height: 1.65;
+}
+
+
+@media only screen and (min-width: 764px) {
+  .three-column-cards {
+    display: flex;
+  }
+  
+  .preview-card:nth-child(1) {
+    border-top-right-radius: 0;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+  
+  .preview-card:nth-child(3) {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+
+  .preview-card > p {
+    margin-block-end: 6em;
+    max-width: 23ch;
+  }
+}

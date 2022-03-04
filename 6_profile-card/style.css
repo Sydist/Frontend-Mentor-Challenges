@@ -1,0 +1,127 @@
+@import url("./css/reset.css"); 
+
+:root {
+  --clr-dark-cyan: hsl(185, 75%, 39%);
+  --clr-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+  --clr-dark-gray: hsl(0, 0%, 59%);
+
+  --fw-normal: 400;
+  --fw-bold: 800;
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 112.5%;
+}
+
+.viewport-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr-dark-cyan);
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  background-attachment: fixed;
+  background-position: -50vh -50vh, calc(100% + 50vh) calc(100% + 50vh);
+}
+
+/* 
+================
+  Profile Card
+================
+*/
+
+.profile-card {
+  border-radius: .75rem;
+  margin: 1.4rem;
+
+  min-width: 16.5rem;
+  width: 100%;
+  max-width: 19.5rem;
+}
+
+.profile-card__banner {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.profile-card__body {
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+
+  position: relative;
+}
+
+.profile-card__avatar {
+  border-radius: 50%;
+  border: 5px solid white;
+
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.profile-card__info {
+  text-align: center;
+
+  margin-block: 3.9rem 1.2rem;
+}
+
+.profile-card__info > [aria-label="Name:"] {
+  font-weight: var(--fw-bold);
+  color: var(--clr-very-dark-desaturated-blue);
+}
+
+.profile-card__info > [aria-label="Age:"] {
+  margin-left: .5em;
+  color: var(--clr-dark-grayish-blue);
+}
+
+.profile-card__info > [aria-label="Place of residence:"] {
+  font-size: .75em;
+  color: var(--clr-dark-grayish-blue);
+}
+
+/* 
+================
+  Profile Stats
+================
+*/
+
+.profile-card__stats {
+  border-top: 1px solid hsla(0, 0%, 59%, 0.25);
+  padding: 1.225rem 1.6rem;
+  margin: 0;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  width: 100%;
+}
+
+.profile-card__statistic {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  font-size: .6rem;
+  letter-spacing: .1em;
+  color: var(--clr-dark-grayish-blue);
+}
+
+.profile-card__statistic abbr {
+  text-decoration: none;
+
+  font-size: 1rem;
+  letter-spacing: .01em;
+  font-weight: var(--fw-bold);
+  color: var(--clr-very-dark-desaturated-blue);
+}

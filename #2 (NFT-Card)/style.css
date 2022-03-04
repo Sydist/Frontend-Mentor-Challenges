@@ -1,0 +1,118 @@
+@import url("./css/reset.css"); 
+
+:root {
+  --clr-soft-blue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  --clr-very-dark-blue: hsl(217, 54%, 11%);
+  --clr-darker-blue: hsl(215, 51%, 16%);
+  --clr-dark-blue: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --fw-light: 300;
+  --fw-medium: 400;
+  --fw-semibold: 600;
+
+  --fnt-main: "Outfit", sans-serif;
+
+  font-size: 62.5%;
+  font-family: var(--fnt-main);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr-very-dark-blue);
+  color: var(--clr-white);
+  line-height: 1.62;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.nft-card {
+  background-color: var(--clr-darker-blue);
+  border-radius: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  padding: 2.4rem;
+}
+
+.nft-card__image {
+  max-width: 28rem;
+  border-radius: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.nft-card__title {
+  font-weight: var(--fw-semibold);
+  font-size: 2.2rem;
+}
+
+.nft-card__info {
+  font-weight: var(--fw-light);
+  color: var(--clr-soft-blue);
+  font-size: 1.6rem;
+  max-width: 24ch;
+}
+
+.nft-card__stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--clr-dark-blue);
+}
+
+.nft-card__stats > :first-child {
+  --marker: url("./images/icon-ethereum.svg");
+  --marker-width: .75em;
+  color: var(--clr-cyan);
+}
+
+.nft-card__stats > :last-child {
+  --marker: url("./images/icon-clock.svg");
+  --marker-width: 1em;
+  color: var(--clr-soft-blue);
+}
+
+.marker-left {
+  font-size: 1.6rem;
+  font-weight: var(--fw-medium);
+}
+
+.marker-left::before {
+  content: var(--marker);
+  width: var(--marker-width);
+  float: left;
+  position: relative;
+  top: .128em;
+  margin-right: .5em;
+}
+
+.nft-card__creator {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding: .8rem;
+
+}
+
+.nft-card__creator > img {
+  max-width: 3.2rem;
+  border-radius: 50%;
+  border: 1px solid var(--clr-white);
+}
+
+.nft-card__creator > p {
+  font-size: 1.6rem;
+  font-weight: var(--fw-light);
+  color: var(--clr-soft-blue);
+}
+
+.nft-card__creator > p span {
+  color: var(--clr-white);
+}

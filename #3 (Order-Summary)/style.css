@@ -1,0 +1,204 @@
+
+
+
+
+/* Init */
+
+@import url("./css/reset.css"); 
+
+:root {
+  --clr-pale-blue: hsl(225, 100%, 94%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+  --clr-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
+
+  --fnt-main: "Red Hat Display", sans-serif;
+
+  --fs-12: 4.11rem;
+  --fs-11: 3.653rem;
+  --fs-10: 3.247rem;
+  --fs-9: 2.887rem;
+  --fs-8: 2.566rem;
+  --fs-7: 2.281rem;
+  --fs-6: 2.027rem;
+  --fs-5: 1.802rem;
+  --fs-4: 1.602rem;
+  --fs-3: 1.424rem;
+  --fs-2: 1.266rem;
+  --fs-1: 1.125rem;
+  --fs-0: 1rem;
+
+  --fw-normal: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  font-family: var(--fnt-main);
+  font-size: 93.75%;
+}
+
+main {
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--clr-pale-blue);
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* Buttons */
+
+.btn {
+  text-decoration: none;
+  display: block;
+  letter-spacing: .01em;
+  border: none;
+  text-align: center;
+}
+
+.btn--regular {
+  color: white;
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-bright-blue);
+  box-shadow: 0px 1em 3em -1em var(--clr-bright-blue);
+  padding: .9em 3em;
+  border-radius: .75em;
+  letter-spacing: 0.02em;
+}
+
+.btn--ghost {
+  color: var(--clr-desaturated-blue);
+  font-weight: var(--fw-black);
+}
+
+.btn--small {
+  color: var(--clr-bright-blue);
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+  letter-spacing: 0;
+  font-size: .9rem;
+}
+
+
+
+
+/* Order List Component */
+
+.order-list {
+  margin: 0;
+  padding: 0;
+}
+
+.order-list__item {
+  background-color: var(--clr-very-pale-blue);
+  padding: 1.2rem;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.order-list__item > img {
+  width: 3.2rem;
+}
+
+.order-list dt {
+  font-size: .95rem;
+  font-weight: var(--fw-black);
+  color: var(--clr-dark-blue);
+}
+
+.order-list dd {
+  font-size: .95rem;
+  color: var(--clr-desaturated-blue);
+  font-weight: var(--fw-normal);
+}
+
+.order-list__item .btn--small {
+  margin-left: auto;
+  font-weight: var(--fw-bold);
+}
+
+
+
+
+/* Order Summary Componenet */
+
+.order-summary {
+  background-color: white;
+  border-radius: 1.3rem;
+  margin: 1.6rem;
+  max-width: 30rem;
+
+  text-align: center;
+}
+
+.order-summary__banner {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.order-summary__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding: max(1.6rem, 10.5%);
+  margin-top: -.4rem;
+}
+
+.order-summary__body .btn--regular,
+.order-summary__body .btn--ghost,
+.order-summary__body .order-list {
+  width: 100%;
+}
+
+.order-summary__title {
+  font-size: 1.48rem;
+  font-weight: var(--fw-black);
+  color: var(--clr-dark-blue);
+}
+
+.order-summary__body > p {
+  color: var(--clr-desaturated-blue);
+  line-height: 1.65;
+}
+
+.order-summary__body .order-list,
+.order-summary__body .btn--ghost {
+  margin-block: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-summary__title {
+    font-size: 1.88rem;
+  }
+
+  .order-summary__body > p {
+    color: var(--clr-desaturated-blue);
+    font-size: 1.075rem;
+  }
+
+  .order-list dt,
+  .order-list dd {
+    font-size: 1.1rem;
+  }
+  
+  .order-list__item .btn--small {
+    font-size: 1rem;
+  }
+
+  .order-list__item {
+    margin-bottom: .5rem;
+    padding: 1.6rem 1.2rem;
+  }
+}

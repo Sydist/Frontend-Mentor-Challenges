@@ -200,5 +200,8 @@ main {
 
 .hidden {
    position: absolute;
+   top: 0;
+   left: 0;
+   transform: translateY(-200%);
    opacity: 0;
 }

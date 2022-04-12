@@ -197,3 +197,8 @@ main {
       border: 1px solid currentColor;
    }
 }
+
+.hidden {
+   position: absolute;
+   opacity: 0;
+}

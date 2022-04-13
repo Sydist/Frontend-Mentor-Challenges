@@ -1,0 +1,144 @@
+/* Reset  */
+
+body, h1, p, q, ul, blockquote {
+   margin: 0;
+}
+
+ul {
+   padding: 0;
+}
+
+ul[role="list"] {
+   list-style: none;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+.hidden {
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   left: 0;
+   transform: translateY(-200%);
+}
+
+body {
+   min-height: 100vh;
+   text-rendering: optimizeSpeed;
+
+   display: flex;
+   justify-content: center;
+
+   font-family: "Barlow Semi Condensed", system-ui;
+}
+
+
+
+
+
+/* Utility */
+.bgc-primary-400 { background-color: hsl(263, 55%, 52%) }
+.bgc-neutral-100 { background-color: hsl(0, 0%, 100%)   }
+.bgc-neutral-200 { background-color: hsl(210, 46%, 95%) }
+.bgc-neutral-300 { background-color: hsl(0, 0%, 81%)    }
+.bgc-neutral-400 { background-color: hsl(217, 19%, 35%) }
+.bgc-neutral-900 { background-color: hsl(219, 29%, 14%) }
+
+.clr-primary-400 { color: hsl(263, 55%, 52%) }
+.clr-neutral-100 { color: hsl(0, 0%, 100%)   }
+.clr-neutral-200 { color: hsl(210, 46%, 95%) }
+.clr-neutral-300 { color: hsl(0, 0%, 81%)    }
+.clr-neutral-400 { color: hsl(217, 19%, 35%) }
+.clr-neutral-900 { color: hsl(219, 29%, 14%) }
+
+
+
+
+
+/* Layout */
+
+.testimonials-grid {
+   margin-top: 4.4rem;
+}
+
+ 
+
+
+
+/* Componenets */
+
+.testimonials-card {
+   margin-inline: 1.5rem;
+   border-radius: .5rem;
+   padding: 1.5rem 2rem 2rem;
+
+   background-image: url("./images/bg-pattern-quotation.svg");
+   background-repeat: no-repeat;
+   background-size: 32%;
+   background-position: 89% 0;
+}
+
+
+
+.testimonials-card > header {
+   display: flex;
+   align-items: center;
+   gap: 1.1rem;
+}
+
+.testimonials-card__avatar {
+   border-radius: 50%;
+   max-width: 1.75rem;
+   outline: 2px solid  hsla(0, 0%, 100%, 0.333);
+}
+
+.testimonials-card__author {
+   font-size: 0.8125rem;
+   font-weight: 400;
+   color: hsl(0, 0%, 100%);
+   line-height: 1.3;
+}
+
+.testimonials-card__author > :last-child {
+   font-size: 0.7rem;
+   opacity: .5;
+}
+
+
+
+.testimonials-card__quote-header {
+   margin-top: .8em;
+   font-size: 1.25rem;
+   line-height: 1.2;
+   letter-spacing: .005em;
+   font-weight: 500;
+}
+
+.testimonials-card__quote-body {
+   font-weight: 400;
+   max-width: 19.5em;
+   font-size: 0.8rem;
+   margin-top: 1.35em;
+   opacity: .5;
+   line-height: 1.4;
+   letter-spacing: .015em;
+}
+
+
+
+
+
+
+
+/* Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%) */

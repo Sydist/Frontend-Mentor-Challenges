@@ -1,0 +1,7 @@
+@use "../base/variables" as *;
+
+$weights: 400, 600;
+
+@each $val in $weights {
+   .wgh-#{$val} { font-weight: $val }
+}

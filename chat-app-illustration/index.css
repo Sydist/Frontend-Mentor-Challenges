@@ -263,7 +263,7 @@ body::before {
    left: 0;
    height: 75vh;
    width: 50%;
-   max-width: 40rem;
+   max-width: 35rem;
    transform: scale(0);
    border-radius: 0 0 9999px 9999px;
    background: linear-gradient(0deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
@@ -279,7 +279,7 @@ body::after {
    right: 0;
    height: 75vh;
    width: 50%;
-   max-width: 40rem;
+   max-width: 35rem;
    border-radius: 9999px 9999px 0 0;
    background: hsl(275, 100%, 95%);
    transform: scale(0);
@@ -332,6 +332,5 @@ body {
 @media (min-width: 1024px) {
    body {
       flex-direction: row;
-      gap: 8rem;
    }
 }

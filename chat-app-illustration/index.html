@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Chat App Illustration</title>
+
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+     
+      <link rel="stylesheet" href="index.css">
+   </head>
+   <body class="bgc-neutral-200">
+
+      <div class="illustration | bgc-neutral-100 clr-neutral-100 bs-bbox">
+         <div class="illustration__header | bg-gradient-400">
+
+            <div> &#10094; </div>
+ 
+            <div><img src="./images/avatar.jpg" alt=""></div>
+ 
+            <div>
+               <p>Samuel Green</p>
+               <p class="opacity-50 fnt-size-small">Available to Walk</p>
+            </div>
+ 
+            <div class="dotted-menu">
+               <div class="bgc-neutral-300"></div>
+               <div class="bgc-neutral-300"></div>
+               <div class="bgc-neutral-300"></div>
+            </div>
+            
+         </div>
+
+
+         <div class="illustration-body | bgc-neutral-200">
+            <article class="text-message | bgc-primary-100 clr-primary-400" data-yours="false">
+               <p>That sounds great. I'd be happy to discuss more.</p>
+            </article>
+            <article class="text-message | bgc-primary-100 clr-primary-400" data-yours="false">
+               <p>Could you send over some pictures of your dog, please?</p>
+            </article>
+   
+            <article class="image-message" data-yours="true">
+               <div><img src="./images/dog-image-1.jpg" alt="An image of a dog"></div>
+               <div><img src="./images/dog-image-2.jpg" alt="An image of a dog"></div>
+               <div><img src="./images/dog-image-3.jpg" alt="An image of a dog"></div>
+            </article>   
+            <article class="text-message | bgc-neutral-100 clr-neutral-900" data-yours="true">
+               <p>Here's a few pictures, she's a happy girl!</p>
+            </article>
+            <article class="text-message | bgc-neutral-100 clr-neutral-900" data-yours="true">
+               <p>Can you make it?</p>
+            </article>
+
+            <article class="text-message | bgc-primary-100 clr-primary-400" data-yours="false">
+               <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+            </article>
+
+            <article class="price-message | bg-gradient-400--flipped" data-yours="false">
+               <div class="radio-btn opacity-50"></div>
+               <p class="opacity-75">30 minute walk</p>
+               <p>$29</p>
+            </article>
+            <article class="price-message | bg-gradient-400--flipped" data-yours="false">
+               <div class="radio-btn opacity-50"></div>
+               <p class="opacity-75">1 hour walk</p>
+               <p>$49</p>
+            </article>
+         </div>
+      
+         <div class="illustration-footer bgc-neutral-200">
+            <div class="message-bar bgc-neutral-100">
+               <p class="clr-neutral-400">Type a message</p>
+               <button class="bgc-primary-700 clr-neutral-100"><div class="hidden">Send</div>&#10095;</button>
+            </div>
+         </div>
+
+      </div>
+      <div class="intro anim-fade-in">
+         <h1 class="clr-primary-700">Simple booking</h1> 
+         <p class="clr-neutral-400">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+      </div>
+   </body>
+</html>

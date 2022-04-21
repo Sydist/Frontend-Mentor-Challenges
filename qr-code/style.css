@@ -1,4 +1,64 @@
-@import url("./css/reset.css"); 
+*,
+::after,
+::before {
+  box-sizing: border-box
+}
+
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0
+}
+
+ol[role=list],
+ul[role=list] {
+  list-style: none
+}
+
+html:focus-within {
+  scroll-behavior: smooth
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html:focus-within {
+    scroll-behavior: auto
+  }
+
+  *,
+  ::after,
+  ::before {
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important
+  }
+}
 
 :root {
   --clr-white: hsl(0, 0%, 100%);
@@ -37,7 +97,7 @@ body {
   max-width: 28.75rem;
 }
 
-.qr-code-card > h2 {
+.qr-code-card>h2 {
   font-size: 2.25rem;
   max-width: 18ch;
   font-weight: 700;
@@ -45,7 +105,7 @@ body {
   line-height: 1.15;
 }
 
-.qr-code-card > p {
+.qr-code-card>p {
   font-size: 1.6rem;
   line-height: 1.15;
   max-width: 25ch;

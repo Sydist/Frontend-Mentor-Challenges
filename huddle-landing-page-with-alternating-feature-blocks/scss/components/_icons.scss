@@ -1,18 +1,26 @@
 @use "../base/variables" as *;
 
 .icon {
-   width: $base-size * 1.622;
-   height: $base-size  * 1.622;
+   width: $size-600;
+   height: $size-600;
 
    color: $clr-white;
-   padding: 0.616em;
-   border: 0.15em solid currentColor;
-   border-radius: 50%;
    fill: currentColor;
+}
+
+.icon[data-type="link"] {
+   padding: $size-200;
+   border: 2px solid currentColor;
+   border-radius: 50%;
+
    overflow: visible;
 
    transition: color 222ms ease;
    &:hover {
       color: $clr-primary;
    }
+}
+
+.icon[data-type="marker"] {
+   display: inline-block;
 }

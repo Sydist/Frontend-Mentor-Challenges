@@ -53,18 +53,25 @@ h1, h2 {
 }
 
 .icon {
-  width: 1.82475rem;
-  height: 1.82475rem;
+  width: 1.674rem;
+  height: 1.674rem;
   color: hsl(0deg, 0%, 100%);
-  padding: 0.616em;
-  border: 0.15em solid currentColor;
-  border-radius: 50%;
   fill: currentColor;
+}
+
+.icon[data-type=link] {
+  padding: 0.756rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
   overflow: visible;
   transition: color 222ms ease;
 }
-.icon:hover {
+.icon[data-type=link]:hover {
   color: hsl(322deg, 100%, 66%);
+}
+
+.icon[data-type=marker] {
+  display: inline-block;
 }
 
 .clr-primary {

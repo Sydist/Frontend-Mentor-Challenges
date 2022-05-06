@@ -1,11 +1,12 @@
 @use "variables" as *;
 
 body {
-   font-family: $fnt-body;
+   font-size: $size-400;
+   font-family: $fnt-body, system-ui;
    font-weight: 400;
 }
 
 h1, h2 {
-   font-family: $fnt-heading;
+   font-family: $fnt-heading, system-ui;
    font-weight: 600;
 }

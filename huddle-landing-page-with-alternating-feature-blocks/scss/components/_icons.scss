@@ -1,14 +1,15 @@
 @use "../base/variables" as *;
 
 .icon {
-   width: $base-size;
-   height: $base-size;
+   width: $base-size * 1.622;
+   height: $base-size  * 1.622;
 
    color: $clr-white;
-   padding: .5em;
-   border: .1em solid currentColor;
+   padding: 0.616em;
+   border: 0.15em solid currentColor;
    border-radius: 50%;
    fill: currentColor;
+   overflow: visible;
 
    transition: color 222ms ease;
    &:hover {

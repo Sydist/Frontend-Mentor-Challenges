@@ -13,16 +13,18 @@ img, svg, use {
 }
 
 a {
+  color: inherit;
   text-decoration-line: none;
 }
 
 body {
-  font-family: "Open Sans";
+  font-size: 1.125rem;
+  font-family: "Open Sans", system-ui;
   font-weight: 400;
 }
 
 h1, h2 {
-  font-family: "Poppins";
+  font-family: "Poppins", system-ui;
   font-weight: 600;
 }
 
@@ -32,6 +34,10 @@ h1, h2 {
 
 .logo[data-type=secondary] {
   fill: hsl(0deg, 0%, 100%);
+}
+
+.link:hover {
+  text-decoration-line: underline;
 }
 
 .btn {
@@ -47,13 +53,14 @@ h1, h2 {
 }
 
 .icon {
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 1.82475rem;
+  height: 1.82475rem;
   color: hsl(0deg, 0%, 100%);
-  padding: 0.5em;
-  border: 0.1em solid currentColor;
+  padding: 0.616em;
+  border: 0.15em solid currentColor;
   border-radius: 50%;
   fill: currentColor;
+  overflow: visible;
   transition: color 222ms ease;
 }
 .icon:hover {
@@ -98,4 +105,40 @@ h1, h2 {
 
 .bgc-neutral {
   background-color: hsl(208deg, 11%, 55%);
+}
+
+.fs-100 {
+  font-size: 0.619875rem;
+}
+
+.fs-200 {
+  font-size: 0.756rem;
+}
+
+.fs-300 {
+  font-size: 0.9225rem;
+}
+
+.fs-400 {
+  font-size: 1.125rem;
+}
+
+.fs-500 {
+  font-size: 1.3725rem;
+}
+
+.fs-600 {
+  font-size: 1.674rem;
+}
+
+.fs-700 {
+  font-size: 2.043rem;
+}
+
+.fs-800 {
+  font-size: 2.491875rem;
+}
+
+.fs-900 {
+  font-size: 3.040875rem;
 }

@@ -1,0 +1,19 @@
+@use "../base/variables" as *;
+
+$sizes: (
+   "100": $size-100,
+   "200": $size-200,
+   "300": $size-300,
+   "400": $size-400,
+   "500": $size-500,
+   "600": $size-600,
+   "700": $size-700,
+   "800": $size-800,
+   "900": $size-900,
+);
+
+@each $key, $value in $sizes {
+   .fs-#{$key} {
+      font-size: $value;
+   }
+}

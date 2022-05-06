@@ -13,27 +13,35 @@
       <meta name="publisher" content="Fylo">
       <meta name="color-scheme" content="dark">
       <meta name="theme-color" content="hsl(322, 100%, 66%)">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
    </head>
-   <body>
-      <header>
+   <body class="bgc-light clr-dark">
+      <header class="hero">
          <nav aria-label="Primary">
             <img src="/images/logo.svg" alt="Huddle">
-            <a href="/register">Try It Free</a>
+            <a href="/register" class="[ btn ]  [ bgc-light clr-dark ]">Try It Free</a>
          </nav>
 
-         <h1>Build The Community Your Fans Will Love</h1>
-         <p>
-            Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-            Create connections with your users as you engage in genuine discussion. 
-         </p>
-         <a href="/register">Get Started For Free</a>
-
-         <img src="/images/illustration-mockups.svg" alt="">
+         <div class="flex">
+            <div>
+               <h1>Build The Community Your Fans Will Love</h1>
+               <p>
+                  Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+                  Create connections with your users as you engage in genuine discussion.
+               </p>
+               <a href="/register" class="[ btn ]  [ bgc-primary clr-light ]">Get Started For Free</a>
+            </div>
+   
+            <div><img src="/images/illustration-mockups.svg" alt=""></div>
+         </div>
       </header>
 
       <main>
-         <section aria-label="Features">
-            <section aria-label="Grow Together">
+         <section aria-label="Features" >
+            <section aria-label="Grow Together" class="flex">
                <div><img src="/images/illustration-grow-together.svg" alt=""></div>
                <div>
                   <h2>Grow Together</h2>
@@ -44,7 +52,7 @@
                </div>
             </section>
    
-            <section aria-label="Flowing Conversations">
+            <section aria-label="Flowing Conversations" class="flex">
                <div><img src="/images/illustration-flowing-conversation.svg" alt=""></div>
                <div>
                   <h2>Flowing Conversations</h2>
@@ -55,7 +63,7 @@
                </div>
             </section>
    
-            <section aria-label="Your Users">
+            <section aria-label="Your Users" class="flex">
                <div><img src="/images/illustration-your-users.svg" alt=""></div>
                <div>
                   <h2>Your Users</h2>
@@ -69,53 +77,55 @@
 
          <section aria-label="Call To Action" aria-hidden="true">
             <h2>Ready to Build Your Community?</h2>
-            <a href="/register">Get Started For Free</a>
+            <a href="/register" class="[ btn ]  [ bgc-primary clr-light ]">Get Started For Free</a>
          </section>
       </main>
 
-      <footer>
+      <footer class="bgc-dark clr-light">
          <img src="/images/logo.svg" alt="Huddle">
 
-         <ul aria-label="Contacts">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde blanditiis libero, vitae error dolores animi ducimus distinctio ipsum eaque praesentium accusantium doloremque asperiores dolorum.</li>
-            <li>+1-543-123-4567</li>
-            <li>example@fylo.com</li>
-         </ul>
-
-         <ul aria-label="Links">
-            <li><a href="/about-us">About Us</a></li>
-            <li><a href="/about-us#what-we-do">What We Do</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/career">Career</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-         </ul>
-
-         <ul aria-label="Social Media">
-            <li>
-               <a href="/facebook" aria-label="Facebook">
-                  <svg>
-                     <use xlink:href="/images/icons.svg#facebook" />
-                  </svg>
-               </a>
-            </li>
-
-            <li>
-               <a href="/twitter" aria-label="Twitter">
-                  <svg>
-                     <use xlink:href="/images/icons.svg#twitter" />
-                  </svg>
-               </a>
-            </li>
-
-            <li>
-               <a href="/instagram" aria-label="Instagram">
-                  <svg>
-                     <use xlink:href="/images/icons.svg#instagram" />
-                  </svg>
-               </a>
-            </li>
-         </ul>
+         <div class="flex">
+            <ul aria-label="Contacts">
+               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde blanditiis libero, vitae error dolores animi ducimus distinctio ipsum eaque praesentium accusantium doloremque asperiores dolorum.</li>
+               <li>+1-543-123-4567</li>
+               <li>example@fylo.com</li>
+            </ul>
+   
+            <ul aria-label="Links">
+               <li><a href="/about-us">About Us</a></li>
+               <li><a href="/about-us#what-we-do">What We Do</a></li>
+               <li><a href="/faq">FAQ</a></li>
+               <li><a href="/career">Career</a></li>
+               <li><a href="/blog">Blog</a></li>
+               <li><a href="/contact">Contact Us</a></li>
+            </ul>
+   
+            <ul aria-label="Social Media">
+               <li>
+                  <a href="/facebook" aria-label="Facebook">
+                     <svg>
+                        <use xlink:href="/images/icons.svg#facebook" />
+                     </svg>
+                  </a>
+               </li>
+   
+               <li>
+                  <a href="/twitter" aria-label="Twitter">
+                     <svg>
+                        <use xlink:href="/images/icons.svg#twitter" />
+                     </svg>
+                  </a>
+               </li>
+   
+               <li>
+                  <a href="/instagram" aria-label="Instagram">
+                     <svg>
+                        <use xlink:href="/images/icons.svg#instagram" />
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
          
          <p>&copy;Copyright 2018 Huddle. All rights reserved.</p>
       </footer>

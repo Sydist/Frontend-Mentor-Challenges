@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+p, a {
+   font-family: $fnt-body;
+   font-weight: 400;
+}
+
+h1, h2 {
+   font-family: $fnt-heading;
+   font-weight: 600;
+}

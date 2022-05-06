@@ -16,12 +16,42 @@ a {
   text-decoration-line: none;
 }
 
+p, a {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.29375rem;
+  font-weight: 700;
+  padding: 1em 4em;
+  border-radius: 9999px;
+  transition: filter 200ms ease;
+}
+.btn:hover {
+  filter: opacity(0.8);
+}
+
 .clr-primary {
   color: hsl(322deg, 100%, 66%);
 }
 
 .bgc-primary {
   background-color: hsl(322deg, 100%, 66%);
+}
+
+.clr-white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.bgc-white {
+  background-color: hsl(0deg, 0%, 100%);
 }
 
 .clr-dark {

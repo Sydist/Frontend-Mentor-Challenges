@@ -1,0 +1,16 @@
+@use "../base/variables" as *;
+
+.btn {
+   display: inline-block;
+   font-size: $base-size * 1.15;
+   font-weight: 700;
+
+   padding: 1em 4em;
+   border-radius: 9999px;
+
+   transition: filter 200ms ease;
+
+   &:hover {
+      filter: opacity(0.8);
+   }
+}

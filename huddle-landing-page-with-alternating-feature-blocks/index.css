@@ -16,7 +16,7 @@ a {
   text-decoration-line: none;
 }
 
-p, a {
+body {
   font-family: "Open Sans";
   font-weight: 400;
 }
@@ -26,16 +26,38 @@ h1, h2 {
   font-weight: 600;
 }
 
+.logo[data-type=primary] {
+  fill: hsl(322deg, 100%, 66%);
+}
+
+.logo[data-type=secondary] {
+  fill: hsl(0deg, 0%, 100%);
+}
+
 .btn {
   display: inline-block;
   font-size: 1.29375rem;
   font-weight: 700;
   padding: 1em 4em;
   border-radius: 9999px;
-  transition: filter 200ms ease;
+  transition: filter 222ms ease;
 }
 .btn:hover {
   filter: opacity(0.8);
+}
+
+.icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.5em;
+  border: 0.1em solid currentColor;
+  border-radius: 50%;
+  fill: currentColor;
+  transition: color 222ms ease;
+}
+.icon:hover {
+  color: hsl(322deg, 100%, 66%);
 }
 
 .clr-primary {

@@ -1,0 +1,9 @@
+@use "../base/variables" as *;
+
+.logo[data-type="primary"] {
+   fill: $clr-primary;
+}
+
+.logo[data-type="secondary"] {
+   fill: $clr-white;
+}

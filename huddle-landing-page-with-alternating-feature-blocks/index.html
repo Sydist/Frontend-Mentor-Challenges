@@ -14,17 +14,23 @@
       <meta name="color-scheme" content="only light">
       <meta name="theme-color" content="hsl(322, 100%, 66%)">
 
+      <link rel="shortcut icon" href="/images/favicon.svg" type="image/svg+xml">
+
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
    
       <link rel="stylesheet" href="/index.css">
    </head>
-   <body class="clr-dark">
-      <header class="bgc-light hero">
+   <body class="clr-dark fs-400">
+      <header class="primary-header | bgc-light">
          <nav aria-label="Primary">
-            <div><svg class="logo" data-type="primary" viewBox="0 0 240 39"><use xlink:href="/images/icons.svg#logo" /></svg></div>
-            <a href="/register" class="[ btn ]  [ bgc-white clr-dark ]">Try It Free</a>
+            <div>
+               <svg class="logo" data-type="primary" viewBox="0 0 240 39">
+                  <use xlink:href="/images/icons.svg#logo"></use>
+               </svg>
+            </div>
+            <a href="/register" class="btn | bgc-white clr-dark">Try It Free</a>
          </nav>
 
          <div class="flex">
@@ -34,20 +40,26 @@
                   Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
                   Create connections with your users as you engage in genuine discussion.
                </p>
-               <a href="/register" class="[ btn ]  [ bgc-primary clr-light ]">Get Started For Free</a>
+               <a href="/register" class="btn | bgc-primary clr-light">Get Started For Free</a>
             </div>
    
-            <div><img src="/images/illustration-mockups.svg" alt=""></div>
+            <div>
+               <img src="/images/mockups.svg" alt="">
+            </div>
          </div>
       </header>
 
       <main class="bgc-white">
          <section aria-label="Features" >
             <section aria-label="Grow Together" class="flex">
-               <div><img src="/images/illustration-grow-together.svg" alt=""></div>
                <div>
-                  <h2>Grow Together</h2fs>
-                  <p>
+                  <svg viewBox="0 0 1023.46 837.84">
+                     <use xlink:href="/images/illustrations.svg#grow-together"></use>
+                  </svg>
+               </div>
+               <div>
+                  <h2 class="fs-800">Grow Together</h2>
+                  <p class="clr-neutral fs-600">
                      Generate meaningful discussions with your audience and build a strong, loyal community.
                      Think of the insightful conversations you miss out on with a feedback form.
                   </p>
@@ -55,10 +67,14 @@
             </section>
    
             <section aria-label="Flowing Conversations" class="flex">
-               <div><img src="/images/illustration-flowing-conversation.svg" alt=""></div>
                <div>
-                  <h2>Flowing Conversations</h2>
-                  <p>
+                  <svg viewBox="0 0 1125.12 800.94">
+                     <use xlink:href="/images/illustrations.svg#flowing-conversations"></use>
+                  </svg>
+               </div>
+               <div>
+                  <h2 class="fs-800">Flowing Conversations</h2>
+                  <p class="clr-neutral fs-600">
                      You wouldn't paginate a conversation in real life, so why do it online? 
                      Our threads have just-in-time loading for a more natural flow.
                   </p>
@@ -66,10 +82,14 @@
             </section>
    
             <section aria-label="Your Users" class="flex">
-               <div><img src="/images/illustration-your-users.svg" alt=""></div>
                <div>
-                  <h2>Your Users</h2>
-                  <p>
+                  <svg viewBox="0 0 1077.87 813.02">
+                     <use xlink:href="/images/illustrations.svg#your-users"></use>
+                  </svg>
+               </div>
+               <div>
+                  <h2 class="fs-800">Your Users</h2>
+                  <p class="clr-neutral fs-600">
                      It takes no time at all to integrate Huddle with your app's authentication solution. 
                      This means, once signed in to your app, your users can start chatting immediately.
                   </p>
@@ -78,23 +98,23 @@
          </section>
 
          <section aria-label="Call To Action" aria-hidden="true">
-            <h2>Ready to Build Your Community?</h2>
-            <a href="/register" class="[ btn ]  [ bgc-primary clr-light ]">Get Started For Free</a>
+            <h2 class="fs-800">Ready to Build Your Community?</h2>
+            <a href="/register" class="btn | bgc-primary clr-light">Get Started For Free</a>
          </section>
       </main>
 
-      <footer class="bgc-dark clr-white">
+      <footer class="primary-footer | bgc-dark clr-white">
          <a href="/" aria-label="Huddle">
             <svg class="logo" data-type="secondary" viewBox="0 0 240 39">
-               <use xlink:href="/images/icons.svg#logo" />
+               <use xlink:href="/images/icons.svg#logo"></use>
             </svg>
          </a>
 
          <div class="flex">
             <ul aria-label="Contacts" class="fs-600">
-               <li><svg class="icon" data-type="marker"><use xlink:href="/images/icon.svg#location" /></svg> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde blanditiis libero, vitae error dolores animi ducimus distinctio ipsum eaque praesentium accusantium doloremque asperiores dolorum.</li>
-               <li><svg class="icon" data-type="marker"><use xlink:href="/images/icon.svg#phone" /></svg> +1-543-123-4567</li>
-               <li><svg class="icon" data-type="marker"><use xlink:href="/images/icon.svg#email" /></svg> example@fylo.com</li>
+               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde blanditiis libero, vitae error dolores animi ducimus distinctio ipsum eaque praesentium accusantium doloremque asperiores dolorum.</li>
+               <li>+1-543-123-4567</li>
+               <li>example@fylo.com</li>
             </ul>
    
             <nav aria-label="Secondary">
@@ -107,13 +127,12 @@
                   <li><a class="link" href="/contact">Contact Us</a></li>
                </ul>
             </nav>
-
    
             <ul aria-label="Social Media">
                <li>
                   <a href="/facebook" aria-label="Facebook">
                      <svg class="icon" data-type="link">
-                        <use xlink:href="/images/icons.svg#facebook" />
+                        <use xlink:href="/images/icons.svg#facebook"></use>
                      </svg>
                   </a>
                </li>
@@ -121,7 +140,7 @@
                <li>
                   <a href="/twitter" aria-label="Twitter">
                      <svg class="icon" data-type="link">
-                        <use xlink:href="/images/icons.svg#twitter" />
+                        <use xlink:href="/images/icons.svg#twitter"></use>
                      </svg>
                   </a>
                </li>
@@ -129,7 +148,7 @@
                <li>
                   <a href="/instagram" aria-label="Instagram">
                      <svg class="icon" data-type="link">
-                        <use xlink:href="/images/icons.svg#instagram" />
+                        <use xlink:href="/images/icons.svg#instagram"></use>
                      </svg>
                   </a>
                </li>

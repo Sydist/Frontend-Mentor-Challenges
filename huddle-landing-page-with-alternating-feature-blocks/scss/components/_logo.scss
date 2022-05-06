@@ -1,9 +1,20 @@
 @use "../base/variables" as *;
 
+.primary-header .logo {
+   max-width: 10%;
+}
+
+.primary-footer .logo {
+   max-width: 17.5%;
+}
+
+
 .logo[data-type="primary"] {
    fill: $clr-primary;
+   color: black;
 }
 
 .logo[data-type="secondary"] {
    fill: $clr-white;
+   color: $clr-white;
 }

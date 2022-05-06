@@ -18,7 +18,6 @@ a {
 }
 
 body {
-  font-size: 1.125rem;
   font-family: "Open Sans", system-ui;
   font-weight: 400;
 }
@@ -28,12 +27,22 @@ h1, h2 {
   font-weight: 600;
 }
 
+.primary-header .logo {
+  max-width: 10%;
+}
+
+.primary-footer .logo {
+  max-width: 17.5%;
+}
+
 .logo[data-type=primary] {
   fill: hsl(322deg, 100%, 66%);
+  color: black;
 }
 
 .logo[data-type=secondary] {
   fill: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .link:hover {

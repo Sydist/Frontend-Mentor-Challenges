@@ -1,0 +1,49 @@
+body, h1, h2, p, ul, a {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img, svg, use {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.clr-primary {
+  color: hsl(322deg, 100%, 66%);
+}
+
+.bgc-primary {
+  background-color: hsl(322deg, 100%, 66%);
+}
+
+.clr-dark {
+  color: hsl(192deg, 100%, 9%);
+}
+
+.bgc-dark {
+  background-color: hsl(192deg, 100%, 9%);
+}
+
+.clr-light {
+  color: hsl(193deg, 100%, 96%);
+}
+
+.bgc-light {
+  background-color: hsl(193deg, 100%, 96%);
+}
+
+.clr-neutral {
+  color: hsl(208deg, 11%, 55%);
+}
+
+.bgc-neutral {
+  background-color: hsl(208deg, 11%, 55%);
+}

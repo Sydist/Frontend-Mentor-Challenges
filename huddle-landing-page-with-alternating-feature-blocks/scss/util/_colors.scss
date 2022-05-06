@@ -1,0 +1,18 @@
+@use "../base/variables" as *;
+
+$colors: (
+   "primary": $clr-primary,
+   "dark": $clr-dark,
+   "light": $clr-light,
+   "neutral": $clr-neutral,
+);
+
+@each $key, $value in $colors {
+   .clr-#{$key} {
+      color: $value;
+   }
+
+   .bgc-#{$key} {
+      background-color: $value;
+   }
+}

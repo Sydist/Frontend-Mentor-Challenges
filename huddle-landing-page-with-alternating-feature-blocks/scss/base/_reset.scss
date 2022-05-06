@@ -1,0 +1,18 @@
+body, h1, h2, p, ul, a {
+   margin: 0;
+}
+
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+img, svg, use {
+   display: block;
+   max-width: 100%;
+}
+
+a {
+   text-decoration-line: none;
+}
+

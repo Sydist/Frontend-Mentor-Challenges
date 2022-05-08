@@ -1,0 +1,32 @@
+@use "../base/variables" as *;
+
+.feature-card {
+  gap: 6rem;
+  max-width: $size-400 * 36;
+
+  margin-inline: auto;
+  box-shadow: 0px 0px 16px 0 rgba(0, 0, 0, 0.12);
+  border-radius: $size-800;
+  padding: $size-800 * 2;
+  box-sizing: border-box;
+  text-align: center;
+
+  font-size: $size-700 * 2;
+
+
+
+  @media (min-width:1280px) {
+    max-width:$size-400 * 90;
+    text-align: left;
+
+    & > :first-child {
+      max-width: $size-400 * 36;
+    }
+
+    & > :last-child {
+      max-width: $size-400 * 36;
+    }
+
+  }
+}
+

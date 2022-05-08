@@ -1,0 +1,51 @@
+@use "../base/variables" as *;
+
+.primary-header {
+  &.section {
+    padding-top: 0;
+  }
+  
+  text-align: center;
+  
+  & > nav {
+    margin-bottom: 5rem;
+    max-width: $size-400 * 82;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & > .flex {
+    max-width: $size-400 * 82;
+    margin-inline: auto;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  & .intro {
+    max-width: 30em;
+    margin-inline: auto;
+    @media (min-width: 1280px) {
+      margin-inline: 0;
+    }
+  }
+
+
+  @media (min-width: 1280px) {
+    text-align: left;
+    .btn {
+      margin-top: 2em;
+      font-size: $size-400;
+    }
+  }
+
+  img {
+    max-width: 40em;
+    margin-inline: auto;
+    @media (min-width: 1280px) {
+      margin-inline: 0;
+    }
+  }
+}
+

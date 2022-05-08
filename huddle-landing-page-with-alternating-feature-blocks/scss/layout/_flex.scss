@@ -1,0 +1,16 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+  .flex {
+    flex-direction: row;
+
+    align-items: center;
+  }
+
+  .flex[data-order="flip"] {
+    flex-direction: row-reverse;
+  }
+} 
